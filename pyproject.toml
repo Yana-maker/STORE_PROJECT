@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "store-project"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "store_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.4"
+pillow = "^10.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
