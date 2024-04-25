@@ -69,7 +69,8 @@ class Cart(models.Model):
 
 
 class CartItem(models.Model):
-    """модель корзины с прдуктами """
+    """модель корзины с продуктами"""
+
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE, verbose_name='корзина')
     product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name='продукты', related_name='product')
     quantity = models.PositiveIntegerField(default=1)
